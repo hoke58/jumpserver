@@ -97,6 +97,12 @@ class Node(OrgModelMixin):
             key__regex=pattern.format(self.key)
         )
 
+    def get_or_create_children(self, value):
+        node = self.get_children().filter(value=value).first()
+        if not node:
+            node = self.create_child(value)
+        return node
+
     def get_all_children(self, with_self=False):
         pattern = r'^{0}$|^{0}:' if with_self else r'^{0}'
         return self.__class__.objects.filter(
