@@ -71,3 +71,7 @@ urllib3==1.22
 vine==1.1.4
 drf-yasg==1.9.1
 Werkzeug==0.14.1
+aliyun-python-sdk-core==2.3.5    
+aliyun-python-sdk-core-v3==2.9.1    
+aliyun-python-sdk-ecs==4.10.1   
+
