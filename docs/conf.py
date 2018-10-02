@@ -21,8 +21,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Jumpserver'
-copyright = '北京堆栈科技有限公司 © 2014-2018'
-author = 'Jumpserver team'
+copyright = '南京润辰科技有限公司 © 2018'
+author = 'Jumpserver team & Hoke'
 
 # The short X.Y version
 version = ''
