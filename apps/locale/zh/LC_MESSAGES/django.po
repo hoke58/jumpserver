@@ -3,19 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Jumpserver 0.3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-07 12:00+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-10-04 17:56+0800\n"
 "Last-Translator: ibuler <ibuler@qq.com>\n"
 "Language-Team: Jumpserver team<ibuler@qq.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: assets/api/node.py:58
 msgid "You can't update the root node name"
@@ -225,7 +225,7 @@ msgstr "高优先级的系统用户将会作为默认登录用户"
 msgid ""
 "If you choose manual login mode, you do not need to fill in the username and "
 "password."
-msgstr "如果选择手动登录模式，用户名和密码则不需要填写"
+msgstr "如果选择手动登录模式，用户名和密码则不需要填写。"
 
 #: assets/models/asset.py:72 assets/models/domain.py:47
 #: assets/templates/assets/_asset_list_modal.html:46
@@ -2288,8 +2288,8 @@ msgid "Asset permission asset list"
 msgstr "资产授权资产列表"
 
 #: templates/_copyright.html:2 templates/_footer.html:8
-msgid " Beijing Duizhan Tech, Inc. "
-msgstr " 北京堆栈科技有限公司 "
+msgid "Nanjing runchain technology co. LTD"
+msgstr "南京润辰科技有限公司"
 
 #: templates/_header_bar.html:31
 msgid "Help"
@@ -2300,8 +2300,8 @@ msgid "Docs"
 msgstr "文档"
 
 #: templates/_header_bar.html:44
-msgid "Commercial support"
-msgstr "商业支持"
+msgid "Operational Norms"
+msgstr "运维规范"
 
 #: templates/_header_bar.html:89 templates/_nav_user.html:9 users/forms.py:148
 #: users/templates/users/_user.html:39
@@ -3140,8 +3140,8 @@ msgid "Next"
 msgstr "下一步"
 
 #: users/templates/users/first_login_done.html:31
-msgid "Welcome to use jumpserver, visit "
-msgstr "欢迎使用Jumpserver开源跳板机系统"
+msgid "Welcome to use jumpserver, visit"
+msgstr "欢迎使用Jumpserver开源堡垒机"
 
 #: users/templates/users/first_login_done.html:32
 msgid "Use guide"
