@@ -52,16 +52,18 @@
         {% endif %}
     </ul>
 </li>
-{% if request.user.is_superuser %}
 <li id="ops">
     <a>
         <i class="fa fa-coffee" style="width: 14px"></i> <span class="nav-label">{% trans 'Job Center' %}</span><span class="fa arrow"></span>
     </a>
     <ul class="nav nav-second-level">
+{#add application manager#}
+        <li><a href="{% url 'ops:process' %}">{% trans 'Process Control' %}</a></li>
+        {% if request.user.is_superuser %}
         <li id="task"><a href="{% url 'ops:task-list' %}">{% trans 'Task list' %}</a></li>
+        {% endif %}
     </ul>
 </li>
-{% endif %}
 <li id="audits">
     <a>
         <i class="fa fa-history" style="width: 14px"></i> <span class="nav-label">{% trans 'Audits' %}</span><span class="fa arrow"></span>
@@ -71,6 +73,26 @@
         <li id="ftp-log"><a href="{% url 'audits:ftp-log-list' %}">{% trans 'FTP log' %}</a></li>
         <li id="operate-log"><a href="{% url 'audits:operate-log-list' %}">{% trans 'Operate log' %}</a></li>
         <li id="password-change-log"><a href="{% url 'audits:password-change-log-list' %}">{% trans 'Password change log' %}</a></li>
+    </ul>
+</li>
+{# 增加监控中心 #}
+<li id="monitor">
+    <a>
+        <i class="fa fa-eye" style="width: 14px"></i> <span class="nav-label">{% trans 'Monitor Center' %}</span><span class="fa arrow"></span>
+    </a>
+    <ul class="nav nav-second-level">
+        <li id="zabbix"><a href="http://monitor.ops.finrunchain.com/zabbix/" target="_blank">{% trans 'Zabbix' %}</a></li>
+        <li id="grafana"><a href="http://monitor.ops.finrunchain.com:3000/" target="_blank">{% trans 'Grafana' %}</a></li>
+        <li id="kafka-manager"><a href="#">{% trans 'Kafka Manager' %}</a></li>
+    </ul>
+</li>
+{# 增加运营中心 #}
+<li id="business">
+    <a>
+        <i class="fa fa-bar-chart" style="width: 14px"></i> <span class="nav-label">{% trans 'Business Center' %}</span><span class="fa arrow"></span>
+    </a>
+    <ul class="nav nav-second-level">
+        <li id="production-list"><a href="#">{% trans 'Production List' %}</a></li>
     </ul>
 </li>
 {#<li id="">#}

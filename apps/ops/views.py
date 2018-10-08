@@ -124,3 +124,14 @@ class AdHocHistoryDetailView(SuperUserRequiredMixin, DetailView):
 class CeleryTaskLogView(SuperUserRequiredMixin, DetailView):
     template_name = 'ops/celery_task_log.html'
     model = CeleryTask
+
+class ProcessContrlView(SuperUserRequiredMixin, TemplateView):
+    template_name = 'ops/process.html'
+
+    def get_context_data(self, **kwargs):
+        context = {
+            'app': _('Ops'),
+            'action': _('Process Control'),
+        }
+        kwargs.update(context)
+        return super().get_context_data(**kwargs)

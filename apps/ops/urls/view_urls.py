@@ -1,6 +1,8 @@
 # ~*~ coding: utf-8 ~*~
 from __future__ import unicode_literals
 from django.urls import path
+from django.views.generic import TemplateView
+
 
 from .. import views
 
@@ -18,4 +20,6 @@ urlpatterns = [
     path('adhoc/<uuid:pk>/history/', views.AdHocHistoryView.as_view(), name='adhoc-history'),
     path('adhoc/history/<uuid:pk>/', views.AdHocHistoryDetailView.as_view(), name='adhoc-history-detail'),
     path('celery/task/<uuid:pk>/log/', views.CeleryTaskLogView.as_view(), name='celery-task-log'),
+    # 进程管理
+    path('process/', views.ProcessContrlView.as_view(), name='process'),
 ]

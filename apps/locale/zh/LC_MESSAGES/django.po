@@ -2137,6 +2137,10 @@ msgid "Ops"
 msgstr "作业中心"
 
 #: ops/views.py:37 templates/_nav.html:61
+msgid "Process Control"
+msgstr "进程管理"
+
+#: ops/views.py:37 templates/_nav.html:63
 msgid "Task list"
 msgstr "任务列表"
 
@@ -3139,16 +3143,12 @@ msgstr "上一步"
 msgid "Next"
 msgstr "下一步"
 
-#: users/templates/users/first_login_done.html:31
-msgid "Welcome to use jumpserver, visit"
-msgstr "欢迎使用Jumpserver开源堡垒机"
-
 #: users/templates/users/first_login_done.html:32
 msgid "Use guide"
 msgstr "向导"
 
 #: users/templates/users/first_login_done.html:32
-msgid " for more information"
+msgid "for more information"
 msgstr "获取更多信息"
 
 #: users/templates/users/forgot_password.html:11
@@ -3161,19 +3161,18 @@ msgstr "忘记密码"
 msgid "Input your email, that will send a mail to your"
 msgstr "输入您的邮箱, 将会发一封重置邮件到您的邮箱中"
 
+#: users/templates/users/first_login_done.html:31
 #: users/templates/users/login.html:27 users/templates/users/login_otp.html:27
 #: users/templates/users/reset_password.html:25
-msgid "Welcome to the Jumpserver open source fortress"
-msgstr "欢迎使用Jumpserver开源堡垒机"
+msgid "Welcome to the RunDevOps system"
+msgstr "欢迎访问润辰DevOps运管平台"
 
 #: users/templates/users/login.html:29 users/templates/users/login_otp.html:29
 msgid ""
-"The world's first fully open source fortress, using the GNU GPL v2.0 open "
-"source protocol, is a professional operation and maintenance audit system in "
-"compliance with 4A."
+"Developed based on the Jumpserver, using the GNU GPL v2.0 open source protocol,"
+" is a professional operation and maintenance audit system in compliance with 4A."
 msgstr ""
-"全球首款完全开源的堡垒机，使用GNU GPL v2.0开源协议，是符合 4A 的专业运维审计"
-"系统。"
+"基于Jumpserver开发，使用GNU GPL v2.0开源协议，是符合 4A 的专业运维审计系统。"
 
 #: users/templates/users/login.html:32 users/templates/users/login_otp.html:32
 msgid ""
@@ -3911,3 +3910,19 @@ msgstr "更新组织"
 
 #~ msgid "MFA setting"
 #~ msgstr "MFA 设置"
+
+#: templates/_nav.html:19
+msgid "Business Center"
+msgstr "运营中心"
+
+msgid "Production List"
+msgstr "产品列表"
+
+msgid "Monitor Center"
+msgstr "监控中心"
+
+msgid "Zabbix"
+msgstr ""
+
+msgid "Grafana"
+msgstr ""
