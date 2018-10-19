@@ -54,6 +54,12 @@ class Config:
     REDIS_DB_CELERY = os.environ.get('REDIS_DB') or 3
     REDIS_DB_CACHE = os.environ.get('REDIS_DB') or 4
 
+    # Runchain Devops Tools URL
+    SUPERVISORD_URL = "http://process.ops.finrunchain.com"
+    ZABBIX_URL = "http://monitor.ops.finrunchain.com"
+    GRAFANA_URL = "http://monitor.ops.finrunchain.com:3000"
+
+
     def __init__(self):
         pass
 

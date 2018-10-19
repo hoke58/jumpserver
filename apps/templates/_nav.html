@@ -82,16 +82,7 @@
     </ul>
 </li>
 {# 增加监控中心 #}
-<li id="monitor">
-    <a>
-        <i class="fa fa-eye" style="width: 14px"></i> <span class="nav-label">{% trans 'Monitor Center' %}</span><span class="fa arrow"></span>
-    </a>
-    <ul class="nav nav-second-level">
-        <li id="zabbix"><a href="http://monitor.ops.finrunchain.com/zabbix/" target="_blank">{% trans 'Zabbix' %}</a></li>
-        <li id="grafana"><a href="http://monitor.ops.finrunchain.com:3000/" target="_blank">{% trans 'Grafana' %}</a></li>
-        <li id="kafka-manager"><a href="#">{% trans 'Kafka Manager' %}</a></li>
-    </ul>
-</li>
+{% include 'monitor.html' %}
 {# 增加运营中心 #}
 <li id="business">
     <a>
