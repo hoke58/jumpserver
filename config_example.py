@@ -59,6 +59,14 @@ class Config:
     ZABBIX_URL = "http://monitor.ops.finrunchain.com"
     GRAFANA_URL = "http://monitor.ops.finrunchain.com:3000"
 
+    # Use OpenID authorization
+    # BASE_SITE_URL = 'http://localhost:8080'
+    # AUTH_OPENID = False  # True or False
+    # AUTH_OPENID_SERVER_URL = 'https://openid-auth-server.com/'
+    # AUTH_OPENID_REALM_NAME = 'realm-name'
+    # AUTH_OPENID_CLIENT_ID = 'client-id'
+    # AUTH_OPENID_CLIENT_SECRET = 'client-secret'
+
 
     def __init__(self):
         pass
