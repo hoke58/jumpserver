@@ -5,7 +5,6 @@ from django.utils.translation import ugettext as _
 from django.conf import settings
 from django.views.generic import ListView, DetailView, TemplateView, View
 from common.mixins import DatetimeSearchMixin
-from .models import Task, AdHoc, AdHocRunHistory, CeleryTask
 from django.contrib.auth.mixins import LoginRequiredMixin
 from common.permissions import SuperUserRequiredMixin, AdminUserRequiredMixin
 
