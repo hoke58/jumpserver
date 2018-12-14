@@ -22,4 +22,7 @@ urlpatterns = [
     path('celery/task/<uuid:pk>/log/', views.CeleryTaskLogView.as_view(), name='celery-task-log'),
     # 进程管理
     path('process/', views.ProcessContrlView.as_view(), name='process'),
+
+    path('command-execution/', views.CommandExecutionListView.as_view(), name='command-execution-list'),
+    path('command-execution/start/', views.CommandExecutionStartView.as_view(), name='command-execution-start'),
 ]

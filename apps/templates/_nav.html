@@ -67,7 +67,11 @@
         <li><a href="{% url 'ops:process' %}">{% trans 'Process Control' %}</a></li>
         {% if request.user.is_superuser %}
         <li id="task"><a href="{% url 'ops:task-list' %}">{% trans 'Task list' %}</a></li>
+
         {% endif %}
+
+        <li id="command-execution"><a href="{% url 'ops:command-execution-start' %}">{% trans 'Command execution' %}</a></li>
+
     </ul>
 </li>
 <li id="audits">
@@ -79,8 +83,10 @@
         <li id="ftp-log"><a href="{% url 'audits:ftp-log-list' %}">{% trans 'FTP log' %}</a></li>
         <li id="operate-log"><a href="{% url 'audits:operate-log-list' %}">{% trans 'Operate log' %}</a></li>
         <li id="password-change-log"><a href="{% url 'audits:password-change-log-list' %}">{% trans 'Password change log' %}</a></li>
+        <li id="command-execution-log"><a href="{% url 'audits:command-execution-log-list' %}">{% trans 'Command execution' %}</a></li>
     </ul>
 </li>
+
 {# 增加监控中心 #}
 {% include 'monitor.html' %}
 {# 增加运营中心 #}
@@ -101,6 +107,7 @@
 {#        <li id="download"><a href="">{% trans 'File download' %}</a></li>#}
 {#    </ul>#}
 {#</li>#}
+
 {% if XPACK_PLUGINS %}
 <li id="xpack">
     <a>
